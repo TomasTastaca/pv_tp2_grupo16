@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <script>
+        const palabra = prompt("Ingrese una palabra:");
+        const contarLetraA = (texto) => {
+    let contador = 0;
+
+    for (let i = 0; i < texto.length; i++) {
+        if (texto[i].toLowerCase() === "a") {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+document.write(`la palabra es: ${palabra} y contiene ${contarLetraA(palabra)} letras "a".`); // 3
+    </script>
+    
+</body>
+</html>
