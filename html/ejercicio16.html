@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <script>
+        const numInicial = parseInt( prompt("Ingrese el valor inicial: "));
+        const numFinal = parseInt( prompt("Ingrese el valor final: "));
+        let sumarRango = (numInicial, numFinal) => {
+            if (numInicial>numFinal){
+                return 0;
+            }
+            else{
+                let sumar = 0;
+                for (let i=numInicial;i<=numFinal;i++){
+                    sumar+=i;
+                } 
+                return sumar;
+            }
+        };
+        let resultado =sumarRango(numInicial,numFinal);
+        if (resultado===0)
+            document.write(`El numero inicial ${numInicial} es mayor que el numero final ${numFinal}`);
+        else
+            document.write(`El resultado de la suma es: ${sumarRango(numInicial,numFinal)}`);
+
+    </script>
+</body>
+</html>
