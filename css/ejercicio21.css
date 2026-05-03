@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* el "cuadro" */
+.card {
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* selects */
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border-radius: 20px;
+    border: none;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+select option {
+    color: black;
+}
